@@ -2,8 +2,7 @@
 import logging
 # IMPORTANT:
 #
-# This code is derived from Iván de Paz Centeno's implentation of Exprecog
-# (https://github.com/ipazc/exprecog/) and Octavia Arriaga's facial expression recognition repo
+# This code is derived from Iván de Paz Centeno and Octavia Arriaga's facial expression recognition repo
 # (https://github.com/oarriaga/face_classification).
 #
 import os
