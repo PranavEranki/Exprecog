@@ -1,9 +1,5 @@
-Exprecog
-===
-
 Keras CNNs for Expression Recognition
 
-![image](media/result.jpg)
 
 INSTALLATION
 ============
