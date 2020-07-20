@@ -74,43 +74,18 @@ Other good examples of usage can be found in the files
 [example.py](example.py) and [video-example.py](video-example.py)
 located in the root of this repository.
 
-PELTARION API
-=============
-
-Add the API URL as an `emotion_model` argument to `Exprecog()`:
-
-```
-detector = Exprecog(emotion_model=MY_API_URL)
-```
-
-Exprecog will then pick up the URL and token from the environment as `EMOTION_API_URL` and `EMOTION_API_TOKEN`.
-
 MODEL
 =====
 
-Exprecog bundles a Keras model, as well as support for [Peltarion](https://peltarion.com) API.
+Exprecog uses a Keras model.
 
 The model is a convolutional neural network with weights saved to HDF5
 file in the `data` folder relative to the module's path. It can be
-overriden by injecting it into the `Exprecog()` constructor during
-instantiation with the `emotion_model` parameter.
+overriden by injecting with the `emotion_model` parameter
+into the `Exprecog()` constructor during instantiation .
 
 LICENSE
 =======
 
 [MIT License](LICENSE).
 
-CREDIT
-======
-
-This code includes methods and package structure copied or derived from
-Iván de Paz Centeno's [implementation](https://github.com/ipazc/mtcnn/)
-of MTCNN and Octavia Arriaga's [facial expression recognition
-repo](https://github.com/oarriaga/face_classification/).
-
-REFERENCE
----------
-
-Exprecog 2013 dataset curated by Pierre Luc Carrier and Aaron Courville, described in:
-
-"Challenges in Representation Learning: A report on three machine learning contests," by Ian J. Goodfellow, Dumitru Erhan, Pierre Luc Carrier, Aaron Courville, Mehdi Mirza, Ben Hamner, Will Cukierski, Yichuan Tang, David Thaler, Dong-Hyun Lee, Yingbo Zhou, Chetan Ramaiah, Fangxiang Feng, Ruifan Li, Xiaojie Wang, Dimitris Athanasakis, John Shawe-Taylor, Maxim Milakov, John Park, Radu Ionescu, Marius Popescu, Cristian Grozea, James Bergstra, Jingjing Xie, Lukasz Romaszko, Bing Xu, Zhang Chuang, and Yoshua Bengio, [arXiv:1307.0414](https://arxiv.org/abs/1307.0414).
